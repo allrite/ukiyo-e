@@ -1,0 +1,204 @@
+// Ukiyo-e Colours
+
+$prussian-blue: #123854;
+$teal-blue: #537D8D;
+$bone: #DCCFB9;
+$alabaster: #F1ECE4;
+$pale-silver: #B4ADA2;
+$redwood: #A96556;
+$raisin-black: #27262c;
+$shadow-grey: #666666;
+
+// Ukiyo-e Fonts
+
+$primary-font: 'Quicksand', sans-serif;
+$heading-font: 'Laila', sans-serif;
+
+
+body {
+    font-family: $primary-font;
+    font-size: 120%;
+    color: $raisin-black;
+    background-color: $bone;
+}
+
+a {
+    color: $redwood;
+}
+
+
+h1 {
+    font-family: $heading-font;
+    color: $prussian-blue;
+}
+
+h1 a {
+    color: $prussian-blue;
+    text-decoration: none;
+}
+
+h1.wp-block-site-title {
+    margin-left: 0 !important;
+}
+h2 {  
+    background-image: url("../assets/img/brushstroke-teal-h.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+}
+
+h2 a {
+    text-decoration: none;
+    color: $raisin-black;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+    color: $redwood;
+}
+.wp-site-blocks {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 800px) minmax(min-content, 300px) 1fr;
+    grid-template-rows: 100px 60px 85% 15% auto;
+    grid-template-areas: 
+    ". header header ."
+    ". primary-menu search ."
+    "banner banner banner banner"
+    "banner banner banner banner"
+    ". main main ."
+    "footer footer footer footer";
+    height: 100vh;
+}
+
+.site-header {
+    grid-area: header;
+    font-family: $heading-font;
+    color: $prussian-blue;
+    margin-left: 0 !important;
+}
+
+.primary-menu {
+    grid-area: primary-menu;
+    background-color: $prussian-blue;
+    color: $alabaster;
+    padding: 10px;
+    border-radius: 5px 0;
+}
+
+.primary-menu-search {
+    grid-area: search;
+    background-color: $prussian-blue;
+    color: $alabaster;
+    padding: 10px;
+    border-radius: 0 5px 0 0;
+}
+
+.banner {
+    grid-area: banner;
+    background-image: url("../assets/img/great-wave-kanagawa.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 1100px) minmax(min-content, 300px) 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "banner-box banner-box .";
+}
+
+.post-banner {
+    grid-area: banner;
+    height: 100%;
+}
+
+.site-footer {
+    grid-area: footer;
+    background-color: $prussian-blue;
+    padding: 10px;
+    margin-top: 10px;
+    color: $alabaster;
+}
+
+.article {
+    grid-area: main;
+    grid-column: 2 / 4;
+    grid-row: 4 / 6;
+    padding: 10px;
+    background-color: $alabaster;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px -5px $shadow-grey;
+}
+
+.wp-block-cover__inner-container {
+    grid-area: banner-box;
+}
+
+img .banner-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-box {
+    grid-area: banner-box;
+    background: rgba(18, 56, 84, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    color: #F1ECE4;
+    font-family: 'Quicksand', sans-serif;
+    align-self: center;
+    justify-self: start;
+    width: 100%;
+}
+
+.banner-box h2 {
+    font-family: 'Laila', sans-serif;
+    color: #F1ECE4;
+    font-size: 250%;
+}
+
+.post-list-container {
+    display: flex;
+}
+
+.post-item {
+    
+}
+
+hr, .wp-block-separator {
+    display : block;
+    border: 0px;
+    height: 10px;
+    background-image: url("../assets/img/brushstroke-red-h.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    margin: auto;
+}
+
+input, .comment-form textarea {
+    border: 0;
+    border-radius: 3px;
+    background-color: $bone;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.18) inset;
+}
+
+// Primary menu search
+
+.wp-block-search__inside-wrapper   {
+    border: 0 !important;
+}
+
+.wp-block-search__input {
+    padding-left: 18px !important;
+    border-radius: 18px !important;
+    background-color: $alabaster;
+}
+
+.wp-block-search__button {
+    border-color: $raisin-black !important;
+    border-radius: 18px !important;
+    background-color: $pale-silver;
+}
+
+.wp-block-query-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

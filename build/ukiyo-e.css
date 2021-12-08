@@ -1,0 +1,151 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 120%;
+  color: #27262c;
+  background-color: #DCCFB9; }
+
+a {
+  color: #A96556; }
+
+h1 {
+  font-family: "Laila", sans-serif;
+  color: #123854; }
+
+h1 a {
+  color: #123854;
+  text-decoration: none; }
+
+h1.wp-block-site-title {
+  margin-left: 0 !important; }
+
+h2 {
+  background-image: url("../assets/img/brushstroke-teal-h.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem; }
+
+h2 a {
+  text-decoration: none;
+  color: #27262c; }
+
+h2 a:hover {
+  text-decoration: underline;
+  color: #A96556; }
+
+.wp-site-blocks {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 800px) minmax(min-content, 300px) 1fr;
+  grid-template-rows: 100px 60px 85% 15% auto;
+  grid-template-areas: ". header header ." ". primary-menu search ." "banner banner banner banner" "banner banner banner banner" ". main main ." "footer footer footer footer";
+  height: 100vh; }
+
+.site-header {
+  grid-area: header;
+  font-family: "Laila", sans-serif;
+  color: #123854;
+  margin-left: 0 !important; }
+
+.primary-menu {
+  grid-area: primary-menu;
+  background-color: #123854;
+  color: #F1ECE4;
+  padding: 10px;
+  border-radius: 5px 0; }
+
+.primary-menu-search {
+  grid-area: search;
+  background-color: #123854;
+  color: #F1ECE4;
+  padding: 10px;
+  border-radius: 0 5px 0 0; }
+
+.banner {
+  grid-area: banner;
+  background-image: url("../assets/img/great-wave-kanagawa.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 1100px) minmax(min-content, 300px) 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "banner-box banner-box ."; }
+
+.post-banner {
+  grid-area: banner;
+  height: 100%; }
+
+.site-footer {
+  grid-area: footer;
+  background-color: #123854;
+  padding: 10px;
+  margin-top: 10px;
+  color: #F1ECE4; }
+
+.article {
+  grid-area: main;
+  grid-column: 2 / 4;
+  grid-row: 4 / 6;
+  padding: 10px;
+  background-color: #F1ECE4;
+  border-radius: 5px;
+  box-shadow: -5px 5px 15px -5px #666666; }
+
+.wp-block-cover__inner-container {
+  grid-area: banner-box; }
+
+img .banner-image {
+  width: 100%;
+  object-fit: cover; }
+
+.banner-box {
+  grid-area: banner-box;
+  background: rgba(18, 56, 84, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  color: #F1ECE4;
+  font-family: 'Quicksand', sans-serif;
+  align-self: center;
+  justify-self: start;
+  width: 100%; }
+
+.banner-box h2 {
+  font-family: 'Laila', sans-serif;
+  color: #F1ECE4;
+  font-size: 250%; }
+
+.post-list-container {
+  display: flex; }
+
+hr, .wp-block-separator {
+  display: block;
+  border: 0px;
+  height: 10px;
+  background-image: url("../assets/img/brushstroke-red-h.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  margin: auto; }
+
+input, .comment-form textarea {
+  border: 0;
+  border-radius: 3px;
+  background-color: #DCCFB9;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.18) inset; }
+
+.wp-block-search__inside-wrapper {
+  border: 0 !important; }
+
+.wp-block-search__input {
+  padding-left: 18px !important;
+  border-radius: 18px !important;
+  background-color: #F1ECE4; }
+
+.wp-block-search__button {
+  border-color: #27262c !important;
+  border-radius: 18px !important;
+  background-color: #B4ADA2; }
+
+.wp-block-query-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+/*# sourceMappingURL=ukiyo-e.css.map */

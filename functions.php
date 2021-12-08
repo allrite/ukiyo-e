@@ -55,9 +55,10 @@
             'styles'    =>  array(
                     'quicksand' => array( 'https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Quicksand:wght@500;700&display=swap', false, false ),
                     'laila' => array( 'https://fonts.googleapis.com/css2?family=Laila:wght@300&&display=swap', false, false ),
+                    'ukiyo-e' => array( get_template_directory_uri().'/build/ukiyo-e.css', false, false )
             ),
             'editorstyles'  =>  array(
-                './style.css',
+                'build/ukiyo-e.css',
                 'https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Quicksand:wght@500;700&display=swap',
                 'https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Quicksand:wght@500;700&display=swap'
             ),
