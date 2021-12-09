@@ -32,11 +32,21 @@ h2 a:hover {
   text-decoration: underline;
   color: #A96556; }
 
+h2.banner-heading {
+  font-family: "Laila", sans-serif;
+  font-size: 200%; }
+
+p.banner-heading {
+  font-family: "Laila", sans-serif;
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center; }
+
 .wp-site-blocks {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 800px) minmax(min-content, 300px) 1fr;
   grid-template-rows: 100px 60px 85% 15% auto;
-  grid-template-areas: ". header header ." ". primary-menu search ." "banner banner banner banner" "banner banner banner banner" ". main main ." "footer footer footer footer";
+  grid-template-areas: ". header header ." ". primary-menu search ." "banner banner banner banner" "banner banner banner banner" ". post-title post-title ." ". main main ." "footer footer footer footer";
   height: 100vh; }
 
 .site-header {
@@ -50,7 +60,7 @@ h2 a:hover {
   background-color: #123854;
   color: #F1ECE4;
   padding: 10px;
-  border-radius: 5px 0; }
+  border-radius: 5px 0 0 0; }
 
 .primary-menu-search {
   grid-area: search;
@@ -64,9 +74,16 @@ h2 a:hover {
   background-image: url("../assets/img/great-wave-kanagawa.jpg");
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr minmax(min-content, 1100px) minmax(min-content, 300px) 1fr;
+  grid-template-columns: 1fr minmax(min-content, 800px) minmax(min-content, 300px) 1fr;
   grid-template-rows: 100%;
-  grid-template-areas: "banner-box banner-box ."; }
+  grid-template-areas: ". banner-inner banner-inner .";
+  z-index: 1; }
+
+.banner .wp-block-cover__inner-container {
+  grid-area: banner-inner;
+  background: rgba(18, 56, 84, 0.8);
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px; }
 
 .post-banner {
   grid-area: banner;
@@ -79,14 +96,55 @@ h2 a:hover {
   margin-top: 10px;
   color: #F1ECE4; }
 
+.post-title {
+  grid-area: post-title;
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+  padding: 10px;
+  background-color: #F1ECE4;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -5px 0 10px -5px #666666;
+  background: rgba(241, 236, 228, 0.8);
+  z-index: 2; }
+
+.post-title h2.wp-block-post-title, h2.archive-title {
+  font-family: "Laila", sans-serif;
+  font-size: 150%;
+  color: #123854;
+  background: none;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important; }
+
+h2.wp-block-post-title {
+  margin-bottom: 0 !important; }
+
+.post-author {
+  display: flex; }
+
 .article {
   grid-area: main;
   grid-column: 2 / 4;
-  grid-row: 4 / 6;
+  grid-row: 5 / 6;
   padding: 10px;
   background-color: #F1ECE4;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: -5px 5px 15px -5px #666666; }
+
+.article-nobanner {
+  grid-area: main;
+  grid-column: 2 / 4;
+  grid-row: 3 / 6;
+  padding: 10px;
+  background-color: #F1ECE4;
+  border-radius: 0 0 5px 5px;
+  box-shadow: -5px 5px 15px -5px #666666; }
+
+.post-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px; }
 
 .wp-block-cover__inner-container {
   grid-area: banner-box; }
