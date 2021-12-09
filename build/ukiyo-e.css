@@ -60,14 +60,16 @@ p.banner-heading {
   background-color: #123854;
   color: #F1ECE4;
   padding: 10px;
-  border-radius: 5px 0 0 0; }
+  border-radius: 5px 0 0 0;
+  margin: 0 !important; }
 
 .primary-menu-search {
   grid-area: search;
   background-color: #123854;
   color: #F1ECE4;
   padding: 10px;
-  border-radius: 0 5px 0 0; }
+  border-radius: 0 5px 0 0;
+  margin: 0 !important; }
 
 .banner {
   grid-area: banner;
@@ -77,7 +79,8 @@ p.banner-heading {
   grid-template-columns: 1fr minmax(min-content, 800px) minmax(min-content, 300px) 1fr;
   grid-template-rows: 100%;
   grid-template-areas: ". banner-inner banner-inner .";
-  z-index: 1; }
+  z-index: 1;
+  margin: 0 !important; }
 
 .banner .wp-block-cover__inner-container {
   grid-area: banner-inner;
@@ -128,7 +131,8 @@ h2.wp-block-post-title {
   padding: 10px;
   background-color: #F1ECE4;
   border-radius: 0 0 5px 5px;
-  box-shadow: -5px 5px 15px -5px #666666; }
+  box-shadow: -5px 5px 15px -5px #666666;
+  margin: 0 !important; }
 
 .article-nobanner {
   grid-area: main;

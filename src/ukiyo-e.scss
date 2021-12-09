@@ -98,6 +98,7 @@ p.banner-heading {
     color: $alabaster;
     padding: 10px;
     border-radius: 5px 0 0 0;
+    margin: 0 !important;
 }
 
 .primary-menu-search {
@@ -106,6 +107,7 @@ p.banner-heading {
     color: $alabaster;
     padding: 10px;
     border-radius: 0 5px 0 0;
+    margin: 0 !important;
 }
 
 .banner {
@@ -117,6 +119,7 @@ p.banner-heading {
     grid-template-rows: 100%;
     grid-template-areas: ". banner-inner banner-inner .";
     z-index: 1;
+    margin: 0 !important;
 }
 .banner .wp-block-cover__inner-container {
     grid-area: banner-inner;
@@ -176,6 +179,7 @@ h2.wp-block-post-title {
     background-color: $alabaster;
     border-radius: 0 0 5px 5px;
     box-shadow: -5px 5px 15px -5px $shadow-grey;
+    margin: 0 !important;
 }
 
 .article-nobanner {
