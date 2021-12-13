@@ -1,15 +1,15 @@
 <!-- wp:template-part {"slug":"header","tagName":"header", "className":"site-header","layout":{"inherit":true}} /-->
 <!-- wp:navigation {"className":"primary-menu","tagName":"nav"} /--><!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"className":"primary-menu-search"} /-->
-<!-- wp:cover {"className":"banner","dimRatio":50,"minHeight":100,"minHeightUnit":"vh","align":"full"} -->
-<div class="wp-block-cover alignfull banner"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="Great Wave of Kanagawa" src="../wp-content/themes/ukiyo-e/assets/img/great-wave-kanagawa.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-<!-- wp:site-tagline {"align":"center", "className": "banner-heading" } /--></div></div>
+<!-- wp:cover {"dimRatio":50,"minHeight":100,"minHeightUnit":"vh","isDark":false,"align":"full","className":"banner"} -->
+<div class="wp-block-cover alignfull is-light banner" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:site-tagline {"align":"center","className":"banner-heading"} /--></div></div>
 <!-- /wp:cover -->
-<!-- wp:group {"layout":{"inherit":true},"tagName":"main"} -->
-<div class="post-title">
-    <!-- wp:paragraph -->
-    <p>About your site...</p>
+<!-- wp:group -->
+<div class="wp-block-group post-title">
+    <!-- wp:paragraph --><p>Some text</p>
     <!-- /wp:paragraph -->
 </div>
+<!-- /wp:group -->
+<!-- wp:group {"layout":{"inherit":true},"tagName":"main","className":"article"} -->
 <main class="wp-block-group article">
     <!-- wp:query -->
     <div class="wp-block-query">

@@ -68,6 +68,7 @@ p.banner-heading {
     font-size: 140%;
     font-weight: bold;
     text-align: center;
+    color: $alabaster !important;
 }
 
 .wp-site-blocks {
@@ -126,6 +127,7 @@ p.banner-heading {
     background: rgba(18, 56, 84, 0.8);
     padding: 10px;
     border-radius: 5px 5px 5px 5px;
+    color: $alabaster;
 }
 
 .post-banner {
@@ -154,7 +156,7 @@ p.banner-heading {
     z-index: 2;
 }
 
-.post-title h2.wp-block-post-title, h2.archive-title {
+.post-title h2.wp-block-post-title, h2.archive-title, h2.page-title {
     font-family: $heading-font;
     font-size: 150%;
     color: $prussian-blue;
