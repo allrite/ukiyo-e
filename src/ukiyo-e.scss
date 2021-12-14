@@ -276,3 +276,12 @@ input, .comment-form textarea {
     align-items: center;
     flex-direction: row;
 }
+
+.wp-site-blocks > * + * {
+    margin-top: 0 !important;
+}
+
+.wp-block-group > * {
+    margin-top: 0 !important;
+}
+

@@ -248,4 +248,12 @@ input, .comment-form textarea {
   flex-direction: row;
 }
 
+.wp-site-blocks > * + * {
+  margin-top: 0 !important;
+}
+
+.wp-block-group > * {
+  margin-top: 0 !important;
+}
+
 /*# sourceMappingURL=ukiyo-e.css.map */
