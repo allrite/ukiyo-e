@@ -131,6 +131,11 @@ p.banner-heading {
   z-index: 2;
 }
 
+.title-author-area .wp-block-post-author__name::after {
+  content: ", ";
+  padding-right: 1em;
+}
+
 .post-title h2.wp-block-post-title, h2.archive-title, h2.page-title {
   font-family: "Laila", sans-serif;
   font-size: 150%;
